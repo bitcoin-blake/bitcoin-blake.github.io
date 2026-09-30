@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+* { box-sizing:border-box } body { margin:0; width:1200px; height:630px; background:#0f1220; color:#e6e8f0; font:16px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; overflow:hidden; position:relative }
+.top { padding:44px 44px 0 } .top .name { font-size:34px; font-weight:800 } .top .sub { color:#8b90a8; font-size:16px; margin-top:6px }
+.grid { position:absolute; left:44px; right:44px; top:168px; display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:16px } .card { background:#171a2b; border:1px solid #2a2f47; border-radius:12px; overflow:hidden } .card img { width:100%; aspect-ratio:1200/630; display:block; object-fit:cover } .card .b { padding:10px 12px 12px } .card h2 { margin:0; font-size:17px } .card h2 span { color:#8b90a8; font-weight:400; font-size:12.5px; margin-left:6px } .card p { margin:4px 0 0; color:#8b90a8; font-size:12px; line-height:1.4 }
+.foot { position:absolute; left:44px; right:44px; bottom:64px; display:flex; justify-content:space-between; align-items:flex-end } .foot .l { font-size:21px; line-height:1.4; max-width:820px } .foot .l b { color:#f0a04b } .foot .r { color:#8b90a8; font-size:14px; text-align:right; line-height:1.5 }
+</style></head><body>
+<div class="top"><div class="name">Bitcoin BLAKE2b in a tab</div><div class="sub">four apps for txbt4, the BLAKE2b testnet4, each a browser tab that validates the chain itself</div></div>
+<div class="grid">
+<div class="card"><img src="og-reef.png"><div class="b"><h2>Reef<span>node and wallet</span></h2><p>A Knots-style node in a tab, one key, sends over the relays.</p></div></div>
+<div class="card"><img src="og-bight.png"><div class="b"><h2>Bight<span>mempool</span></h2><p>Every transaction validated here; the next block is the one this tab would build.</p></div></div>
+<div class="card"><img src="og-winch.png"><div class="b"><h2>Winch<span>miner</span></h2><p>Solo mining in the twenty-minute window; block 152,077 was mined this way.</p></div></div>
+<div class="card"><img src="og-hitch.png"><div class="b"><h2>Hitch<span>channels</span></h2><p>Lightning-shaped channels between tabs, penalties included.</p></div></div>
+</div>
+<div class="foot"><div class="l">A node, a mempool, a miner and payment channels, <b>each in a browser tab</b> that takes nothing on anyone's word.</div><div class="r">bitcoin-blake.github.io<br>Bitcoin Knots' BLAKE2b testnet4 · AGPL</div></div>
+</body></html>
