@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bitcoin BLAKE2b in a tab</title>
+<meta name="description" content="A node, a mempool, a miner and payment channels for txbt4, the BLAKE2b testnet4, each running in a browser tab that validates everything itself.">
+<meta property="og:site_name" content="bitcoin-blake"><meta property="og:title" content="Bitcoin BLAKE2b in a tab"><meta property="og:description" content="Reef, Bight, Winch and Hitch: a node and wallet, a mempool, a miner and payment channels, each a browser tab that validates the chain itself. BLAKE2b testnet4."><meta property="og:type" content="website"><meta property="og:url" content="https://bitcoin-blake.github.io/"><meta property="og:image" content="https://bitcoin-blake.github.io/reef/og.png"><meta name="twitter:card" content="summary_large_image">
+<style>
+:root { --bg:#0f1220; --panel:#171a2b; --line:#2a2f47; --text:#e6e8f0; --mut:#8b90a8; --acc:#f0a04b }
+* { box-sizing:border-box } body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif } a { color:#5b9def }
+main { max-width:1100px; margin:0 auto; padding:48px 20px 60px } h1 { font-size:34px; margin:0 0 6px } .sub { color:var(--mut); font-size:17px; margin:0 0 34px; max-width:760px }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:22px } @media (max-width:760px) { .grid { grid-template-columns:1fr } }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; text-decoration:none; color:inherit; transition:transform .15s, border-color .15s } .card:hover { transform:translateY(-3px); border-color:var(--mut) } .card img { width:100%; aspect-ratio:1200/630; display:block; object-fit:cover; background:#0d0f1a } .card .b { padding:14px 18px 18px } .card h2 { margin:0 0 4px; font-size:20px } .card h2 span { color:var(--mut); font-weight:400; font-size:14px; margin-left:8px } .card p { margin:0; color:var(--mut); font-size:14px }
+.foot { margin-top:40px; color:var(--mut); font-size:14px; line-height:1.7 } .foot b { color:var(--text) }
+</style>
+</head>
+<body><main>
+<h1>Bitcoin BLAKE2b in a tab</h1>
+<p class="sub">Four apps for txbt4, the BLAKE2b testnet4. Each is a browser tab that fetches the fork-point UTXO snapshot, checks its hashes, validates every block since the fork and follows the chain tip itself. Nothing on these pages is taken on anyone's word.</p>
+<div class="grid">
+  <a class="card" href="https://bitcoin-blake.github.io/reef/"><img src="https://bitcoin-blake.github.io/reef/og.png" alt="Reef"><div class="b"><h2>Reef <span>the node and wallet</span></h2><p>A Knots-style node in a tab: Overview, Send, Receive, Transactions, the Node window with its console. One key kept in the tab; sends published for a producer's node to broadcast.</p></div></a>
+  <a class="card" href="https://bitcoin-blake.github.io/bight/"><img src="https://bitcoin-blake.github.io/bight/og.png" alt="Bight"><div class="b"><h2>Bight <span>the mempool</span></h2><p>A mempool monitor in the mempool.space shape. Every transaction shown was validated by the tab's own node, and the next block on the page is the one this tab would build.</p></div></a>
+  <a class="card" href="https://bitcoin-blake.github.io/winch/"><img src="https://bitcoin-blake.github.io/winch/og.png" alt="Winch"><div class="b"><h2>Winch <span>the miner</span></h2><p>Solo mining in a tab. The block is built and checked by the tab's own node from its own mempool, hashed in the tab in testnet's twenty-minute window, and handed to the chain. Block 152,077 was mined this way.</p></div></a>
+  <a class="card" href="https://bitcoin-blake.github.io/hitch/"><img src="https://bitcoin-blake.github.io/hitch/og.png" alt="Hitch"><div class="b"><h2>Hitch <span>payment channels</span></h2><p>Lightning-shaped channels between tabs: a 2-of-2 funding output, revocable commitments, penalties for old states. Funded, watched and settled by the tab's own node; paid between tabs over the relays.</p></div></a>
+</div>
+<div class="foot"><b>Under them:</b> <a href="https://github.com/bitcoin-blake/blaketestnode">blaketestnode</a>, the node that runs in Node and in a browser worker, and its shared tab loader. Chain details, exchanges and links: <a href="https://github.com/bitcoin-blake/awesome-bitcoin-blake">awesome-bitcoin-blake</a>. The chain is Bitcoin Knots' BLAKE2b testnet4; the coins have no value. Sources on <a href="https://github.com/bitcoin-blake">github.com/bitcoin-blake</a>, AGPL-3.0-or-later.</div>
+</main></body></html>
